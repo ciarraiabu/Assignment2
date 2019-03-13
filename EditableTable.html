@@ -1,0 +1,30 @@
+<body onload="makeEditable()">
+<table id="myTable" style="width:100%" onkeyup="checkClicked(); checkValid()">
+
+  <tr>
+    <th id="header" colspan="8">Student Assignment Grades</th>
+  </tr>
+  <tr>
+    <td class="StudentName">Name</td>
+    <td class="StudentID">ID</td>
+    <td class="Assign" >Assignment 1</td>
+    <td class="Grade">Final Grade</td>
+  </tr>
+  <tr>
+    <td class="Person" >-</td>
+    <td class="number">-</td>
+    <td id="final" class="tg-202d">-</td>
+    <td id="final" class="tg-101m">-</td>
+  </tr>
+
+</table>
+<p id="c"></p>
+<div align="center">
+<button class="button" onClick="insertCol();makeEditable();">Append Column</button>
+<button class="button" onClick="insertRow();makeEditable();">Append row</button>
+<button class="button" onclick="calculateAv()">Calculate Final Grades</button>
+<button class="button" onclick= "countUnsub()">Count Unsubmitted</button>
+<button class="button" onclick="saveTable();">Save Table</button>
+<button class="button" onclick="loadTable();makeEditable();">Load Table</button><br><br>
+</div>
+</body>
